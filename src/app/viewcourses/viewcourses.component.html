@@ -16,15 +16,24 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let i of data">
+                          <ng-container * ngIf = "loading; then loadingScreen; else dataScreen"></ng-container>
+                          <ng-template # loadingScreen>
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                          </ng-template>
+
+                          <ng-template>
+                            <tr *ngFor="let i of data">
                             
-                            <td>{{i._id}}</td>
-                            <td>{{i.courseTitle}}</td>
-                            <td>{{i.courseDescription}}</td>
-                            <td>{{i.courseDuration}}</td>
-                            <td>{{i.courseDate}}o</td>
-                            <td>{{i.courseVenue}}</td>
-                          </tr>
+                                <td>{{i._id}}</td>
+                                <td>{{i.courseTitle}}</td>
+                                <td>{{i.courseDescription}}</td>
+                                <td>{{i.courseDuration}}</td>
+                                <td>{{i.courseDate}}o</td>
+                                <td>{{i.courseVenue}}</td>
+                              </tr>
+                          </ng-template>
                           
                         </tbody>
                       </table>
