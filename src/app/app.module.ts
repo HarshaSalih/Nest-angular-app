@@ -8,13 +8,15 @@ import { ViewcoursesComponent } from './viewcourses/viewcourses.component';
 import { HttpClientModule }  from '@angular/common/http';
 import { ViewfriendsComponent } from './viewfriends/viewfriends.component'
 import { FormsModule } from '@angular/forms';
+import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminloginComponent,
     ViewcoursesComponent,
-    ViewfriendsComponent
+    ViewfriendsComponent,
+    EmployeeloginComponent
   ],
   imports: [
     BrowserModule,
