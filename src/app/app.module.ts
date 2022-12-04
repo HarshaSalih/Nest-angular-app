@@ -10,6 +10,7 @@ import { ViewfriendsComponent } from './viewfriends/viewfriends.component'
 import { FormsModule } from '@angular/forms';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 import { EmployeeregistrationComponent } from './employeeregistration/employeeregistration.component';
+import { AddcoursesComponent } from './addcourses/addcourses.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EmployeeregistrationComponent } from './employeeregistration/employeere
     ViewcoursesComponent,
     ViewfriendsComponent,
     EmployeeloginComponent,
-    EmployeeregistrationComponent
+    EmployeeregistrationComponent,
+    AddcoursesComponent
   ],
   imports: [
     BrowserModule,
