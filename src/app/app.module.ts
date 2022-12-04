@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 import { EmployeeregistrationComponent } from './employeeregistration/employeeregistration.component';
 import { AddcoursesComponent } from './addcourses/addcourses.component';
+import { AddfriendsComponent } from './addfriends/addfriends.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddcoursesComponent } from './addcourses/addcourses.component';
     ViewfriendsComponent,
     EmployeeloginComponent,
     EmployeeregistrationComponent,
-    AddcoursesComponent
+    AddcoursesComponent,
+    AddfriendsComponent
   ],
   imports: [
     BrowserModule,
