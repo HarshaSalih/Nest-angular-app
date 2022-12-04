@@ -12,6 +12,20 @@ import { EmployeeloginComponent } from './employeelogin/employeelogin.component'
 import { EmployeeregistrationComponent } from './employeeregistration/employeeregistration.component';
 import { AddcoursesComponent } from './addcourses/addcourses.component';
 import { AddfriendsComponent } from './addfriends/addfriends.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminloginComponent
+  },
+
+  {
+    path:"employeelogin",
+    component:EmployeeloginComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -28,7 +42,8 @@ import { AddfriendsComponent } from './addfriends/addfriends.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

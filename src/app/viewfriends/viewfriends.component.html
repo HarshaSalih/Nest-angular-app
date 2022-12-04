@@ -4,13 +4,13 @@
             <div class="row g-3 mt-4">
 
                 <ng-container * ngIf = "loading; then loadingScreen; else dataScreen"></ng-container>
-                          <ng-template # loadingScreen>
+                          <ng-template #loadingScreen>
                             <div class="spinner-border" role="status">
                                 <span class="visually-hidden">Loading...</span>
                               </div>
                           </ng-template>
 
-                          <ng-template>
+                          <ng-template  #dataScreen>
                             <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
 
                                 <div class="card">
