@@ -7,12 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AdminloginComponent {
 
-  // if (this.username=="admin" && this.password=="nest") {
-  //   alert("valid login")
-    
-  // } else {
-  //   alert("invalid credential")
-    
-  // }
+  Username=""
+  Password=""
+
+  readValues=()=>
+  {
+    let data:any={"Username":this.Username,"Password":this.Password}
+    console.log(data)
+    if (this.Username=="admin" && this.Password=="nest") {
+      alert("valid login")
+      
+    } else {
+      alert("invalid credential")
+      
+    }
+  }
+
+
+
+
+  
 
 }
